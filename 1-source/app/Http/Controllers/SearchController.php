@@ -18,7 +18,7 @@ class SearchController extends Controller
         $name = $request->get('name');
 
         $obj = new Company();
-        $companies = $obj->where('company_name','like',"%name%")->paginate($per_page);
+        $companies = $obj->where('company_name','like',"%$name%")->paginate($per_page);
 
         return view('companies', ['companies' => $companies]);
     }
