@@ -24,7 +24,7 @@
     <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="/companies">Companies</a>
         <a class="p-2 text-dark" href="/trainers">Trainers</a>
-        <a class="p-2 text-dark" href="/search">Search</a>
+        <a class="p-2 text-dark" href="/searchtrainer">Search</a>
 
     </nav>
 
@@ -32,8 +32,12 @@
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
     <h1 class="display-4">Trainers</h1>
-
 </div>
+
+<form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" name="name" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
 
 <div class="container">
     <div class="row">
