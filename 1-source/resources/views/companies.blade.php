@@ -30,6 +30,12 @@
 
 </div>
 
+<form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" name="name" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+
+
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
     <h1 class="display-4">Companies</h1>
 
@@ -72,10 +78,6 @@
                 <ul class="list-unstyled text-small">
                     <li><a class="text-muted" href="#">List of companies</a></li>
 
-
-
-
-
                 </ul>
             </div>
             <div class="col-6 col-md">
@@ -83,8 +85,6 @@
                 <ul class="list-unstyled text-small">
                     <li><a class="text-muted" href="#">List of trainers
                         </a></li>
-
-
 
                 </ul>
             </div>
