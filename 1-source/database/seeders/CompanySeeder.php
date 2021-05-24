@@ -22,6 +22,7 @@ class CompanySeeder extends Seeder
                 'company_web' => Str::random(5) . '.com',
                 'company_address' => Str::random(55),
                 'company_code' => Str::random(55),
+                'category_id' => random_int(1,50),
                 'company_phone' => random_int(900000000, 999999999)
             ]);
         }

@@ -19,6 +19,8 @@ class CreateCompaniesTable extends Migration
             $table->string('company_web', 255);
             $table->string('company_address', 500);
             $table->string('company_code', 55);
+            $table->unsignedBigInteger('category_id');
+            $table->foreign('category_id')->references('category_id')->on('categories');
             $table->string('company_phone', 55);
             $table->timestamps();
         });

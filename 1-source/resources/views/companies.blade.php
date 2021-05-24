@@ -19,6 +19,7 @@
 
 <body>
 
+
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
     <h5 class="my-0 mr-md-auto font-weight-normal">Lập trình backend-web 2</h5>
     <nav class="my-2 my-md-0 mr-md-3">
@@ -29,12 +30,6 @@
     </nav>
 
 </div>
-
-<form class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2" type="search" name="name" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-</form>
-
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
     <h1 class="display-4">Companies</h1>
@@ -50,6 +45,7 @@
                 <th scope="col">Name</th>
                 <th scope="col">Web</th>
                 <th scope="col">Phone</th>
+                <th scope="col">Category name</th>
             </tr>
             </thead>
             <tbody>
@@ -59,6 +55,7 @@
                     <td>{!! $company->company_name !!}</td>
                     <td>{!! $company->company_web !!}</td>
                     <td>{!! $company->company_phone !!}</td>
+                    <td>{!! $company->category->category_id !!}</td>
                 </tr>
                 @endforeach
 
@@ -93,12 +90,12 @@
                 <ul class="list-unstyled text-small">
                     <li><a class="text-muted" href="#">Team</a></li>
 
-
-
                 </ul>
             </div>
         </div>
+
     </footer>
+
 </div>
 
 

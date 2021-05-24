@@ -9,6 +9,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Company;
+use App\Models\Post;
 
 class CompanyController extends Controller
 {
@@ -20,5 +21,12 @@ class CompanyController extends Controller
         $companies = $obj->paginate($per_page);
 
         return view('companies', ['companies' => $companies]);
+
+        $comments = Post::find(1)->comments;
+
+        foreach ($comments as $comment) {
+        }
     }
+
+
 }

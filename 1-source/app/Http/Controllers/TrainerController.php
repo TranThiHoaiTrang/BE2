@@ -16,6 +16,7 @@ class TrainerController extends Controller
 
         $per_page = $request->input('per_page');
 
+
         $obj = new Trainer();
         $trainers = $obj->paginate($per_page);
 
