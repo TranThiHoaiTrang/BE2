@@ -16,9 +16,12 @@ class usersSeeder extends Seeder
      */
     public function run()
     {
-        for ($i = 0; $i < 1000000; $i++) {
+        for ($i = 0; $i < 50; $i++) {
             DB::table('users')->insert([
                 'user_name' => Str::random(50),
+                'user_email' => Str::random(5),
+                'user_phone' => Str::random(50),
+                'user_password' => Str::random(5),
                 'type_id' => random_int(1, 3),
                 'group_id' => random_int(1, 3),
             ]);

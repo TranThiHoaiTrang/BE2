@@ -18,7 +18,7 @@ class CreateGroupsTable extends Migration
             $table->string('group_name', 55);
             // $table->integer('status',5);
             // $table->softDeletesTz($column = 'deleted_at', $precision = 0);
-            $table->timestamps();
+            // $table->timestamps();
         });
     }
 

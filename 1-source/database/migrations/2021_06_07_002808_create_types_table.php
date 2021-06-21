@@ -18,7 +18,7 @@ class CreateTypesTable extends Migration
             $table->string('type_name', 55);
             // $table->integer('status',5);
             // $table->softDeletesTz($column = 'deleted_at', $precision = 0);
-            $table->timestamps();
+            // $table->timestamps();
         });
     }
 
